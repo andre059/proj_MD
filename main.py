@@ -11,13 +11,11 @@ class Stack:
         self.top = None
 
     def push(self, data):
-        """ Добавление элемента """
+        """ Добавление элемента в стэк """
 
         next_node = self.top
         new_top = Node(data, next_node)
         self.top = new_top
-
-
 
 
 n1 = Node(5, None)
@@ -35,4 +33,4 @@ print(stack.top.data)
 print(stack.top.next_node.data)
 print(stack.top.next_node.next_node.data)
 print(stack.top.next_node.next_node.next_node)
-print(stack.top.next_node.next_node.next_node.data)
+#print(stack.top.next_node.next_node.next_node.data)
